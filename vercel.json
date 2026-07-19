@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/netflix-backend/server.js" },
+    { "source": "/", "destination": "/NetflixClone.html" }
+  ]
+}
