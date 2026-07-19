@@ -8,10 +8,7 @@ if (!MONGO_URI) {
 }
 
 // Connect to MongoDB
-mongoose.connect(MONGO_URI || 'mongodb://localhost:27017/netflix_clone', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
+mongoose.connect(MONGO_URI || 'mongodb://localhost:27017/netflix_clone').then(() => {
     console.log('Connected to MongoDB.');
 }).catch((err) => {
     console.error('Error connecting to MongoDB:', err);
