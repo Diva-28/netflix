@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('./database');
-const authRoutes = require('./routes/auth');
-const movieRoutes = require('./routes/movies');
+const authRoutes = require('./auth');
+const movieRoutes = require('./movies');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
